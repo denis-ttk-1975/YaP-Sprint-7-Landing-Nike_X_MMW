@@ -50,4 +50,26 @@
     color: $color-white;
     cursor: pointer;
   }
+  @media screen and (max-width: $pad) and (min-width: $phone) {
+    &__menu {
+      min-height: 256px;
+    }
+    &__menu-item {
+      @include headline-small-pad;
+    }
+  }
+  @media screen and (max-width: $phone) {
+    min-width: $min-screen;
+    &__close-button-wraper {
+      top: 20px;
+      left: 20px;
+    }
+    &__close-btn {
+      width: 24px;
+      height: 24px;
+    }
+    &__menu-item {
+      @include headline-small-phone;
+    }
+  }
 }

@@ -31,4 +31,13 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  @media screen and (max-width: $pad) and (min-width: $phone) {
+  }
+  @media screen and (max-width: $phone) {
+    min-width: $min-screen;
+    &__header {
+      @include headline-large-phone;
+      margin: 0 auto 20px;
+    }
+  }
 }

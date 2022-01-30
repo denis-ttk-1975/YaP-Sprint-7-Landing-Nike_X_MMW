@@ -166,7 +166,6 @@
   }
   .collection__text {
     width: 100%;
-    margin: 0;
     padding-bottom: 20px;
   }
   .collection__image-wrap {
@@ -174,11 +173,15 @@
   }
   .collection__summary {
     flex-direction: column;
-    padding: 0 20px 40px;
+    padding: 40px 20px 20px;
   }
   .collection__motto {
-    width: 33.33%;
-    margin: 0;
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
+    padding-bottom: 20px;
   }
 }
 
@@ -214,6 +217,18 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (max-width: 500px) {
+  .goods {
+    min-width: 300px;
+  }
+  .goods__header {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    text-transform: uppercase;
+    margin: 0 auto 20px;
+  }
 }
 
 .footer {
@@ -262,6 +277,40 @@
 .footer__copyright-info {
   margin: 0;
   padding-bottom: 80px;
+}
+@media screen and (max-width: 500px) {
+  .footer {
+    min-width: 300px;
+  }
+  .footer__subscribe {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    text-transform: uppercase;
+    margin: 40px auto 20px;
+  }
+  .footer__subscribe-text {
+    padding: 0 20px 20px;
+    text-align: center;
+  }
+  .footer__input-form {
+    margin: 0;
+    min-width: 280px;
+    padding: 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__email-field {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .footer__subscribe-button {
+    width: 100%;
+  }
+  .footer__copyright-info {
+    padding: 0 20px 40px;
+    text-align: center;
+  }
 }
 
 .nav {
@@ -317,4 +366,34 @@
   text-decoration: none;
   color: #fff;
   cursor: pointer;
+}
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  .nav__menu {
+    min-height: 256px;
+  }
+  .nav__menu-item {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav {
+    min-width: 300px;
+  }
+  .nav__close-button-wraper {
+    top: 20px;
+    left: 20px;
+  }
+  .nav__close-btn {
+    width: 24px;
+    height: 24px;
+  }
+  .nav__menu-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
+  }
 }/*# sourceMappingURL=index.css.map */
