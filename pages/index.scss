@@ -1,0 +1,18 @@
+@import url(./../vendor/normalize.css);
+@import url(./../vendor/fonts.css);
+/* @import url(./../blocks/root/root.css); */
+// @import url(./../scss/blocks/root/root.css);
+
+@import "./../scss/constants";
+@import "./../scss/mixins";
+
+@import "./../scss/blocks/root/root";
+
+@import "./../scss/blocks/main/main";
+
+@import "./../scss/blocks/header/header";
+@import "./../scss/blocks/collection/collection";
+@import "./../scss/blocks/goods/goods";
+@import "./../scss/blocks/footer/footer";
+
+@import "./../scss/blocks/nav/nav";

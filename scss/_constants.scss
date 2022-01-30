@@ -1,0 +1,64 @@
+$color-black: #0a0a0a;
+$color-white: #fff;
+$color-grey: #999;
+$color-light: #ebebeb;
+
+%font-env {
+  font-family: "GolosTextWebMedium", "Arial", sans-serif;
+  font-style: normal;
+}
+
+%headline-large-screen {
+  font-weight: 500;
+
+  font-size: 64px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+%headline-small-screen {
+  font-weight: 500;
+
+  font-size: 32px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+%body-text-screen {
+  font-weight: 400;
+  font-family: "GolosTextWebRegular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+%button-text-screen {
+  font-weight: 500;
+
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+%headline-small-pad {
+  font-weight: 500;
+
+  font-size: 24px;
+  line-height: 133%;
+  text-transform: uppercase;
+}
+
+%headline-large-phone {
+  font-weight: 500;
+
+  font-size: 32px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+%headline-small-phone {
+  font-weight: 500;
+
+  font-size: 20px;
+  line-height: 140%;
+  text-transform: uppercase;
+}
