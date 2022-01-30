@@ -46,7 +46,7 @@
 .header {
   width: 100%;
   padding-bottom: 56.25%;
-  background-image: url("./../../../images/sportsman.png");
+  background-image: url("./../images/sportsman.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,7 +60,7 @@
   cursor: pointer;
   width: 48px;
   height: 48px;
-  background-image: url("./../../../images/icon_menu.svg");
+  background-image: url("./../images/icon_menu.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,7 +127,7 @@
 .collection__poster {
   width: 100%;
   padding-bottom: 56.25%;
-  background-image: url("./../../../images/training.png");
+  background-image: url("./../images/training.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -199,7 +199,7 @@
 .goods__gallery {
   width: 100%;
   padding-bottom: 27.7%;
-  background-image: url("./../../../images/gallery-placeholder.png");
+  background-image: url("./../images/gallery-placeholder.png");
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
@@ -213,7 +213,7 @@
 .goods__poster {
   width: 100%;
   padding-bottom: 56.25%;
-  background-image: url("./../../../images/goods.png");
+  background-image: url("./../images/goods.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -350,7 +350,7 @@
   cursor: pointer;
   width: 48px;
   height: 48px;
-  background-image: url("./../../../images/icon_close.svg");
+  background-image: url("./../images/icon_close.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
