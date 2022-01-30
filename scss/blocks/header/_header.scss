@@ -20,13 +20,33 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  &__menu-icon {
-  }
+
   &__hero {
     margin: 120px 20px 0;
-    width: 460px;
+    max-width: 460px;
+    width: 100%;
     height: 160px;
     @extend %headline-large-screen;
     color: $color-black;
+  }
+  @media screen and (max-width: $pad) and (min-width: $phone) {
+    &__hero {
+      margin: 80px 20px 0;
+    }
+  }
+  @media screen and (max-width: $phone) {
+    min-width: $min-screen;
+    &__menu-wraper {
+      padding: 20px 20px 0;
+    }
+    &__menu-btn {
+      width: 24px;
+      height: 24px;
+    }
+    &__hero {
+      margin: 40px 20px 0;
+      max-width: 280px;
+      @include headline-large-phone;
+    }
   }
 }

@@ -1,0 +1,52 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-black;
+  color: $color-white;
+
+  &__subscribe {
+    @extend %headline-large-screen;
+    margin: 80px auto 40px;
+  }
+  &__subscribe-text {
+    @extend %body-text-screen;
+    margin: 0;
+    padding-bottom: 40px;
+  }
+  &__input-form {
+    margin: 0;
+    padding-bottom: 40px;
+  }
+  &__email-field {
+    width: 278px;
+    height: 40px;
+    color: $color-grey;
+    background-color: $color-white;
+    box-sizing: border-box;
+    border: 1px solid $color-white;
+    border-radius: 100px;
+    text-align: center;
+    padding: 0;
+    margin-right: 10px;
+  }
+  &__subscribe-button {
+    width: 171px;
+    height: 40px;
+    color: $color-white;
+    background-color: $color-black;
+    box-sizing: border-box;
+    border: 1px solid $color-white;
+    border-radius: 100px;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    @extend %button-text-screen;
+  }
+  &__copyright-info {
+    margin: 0;
+    padding-bottom: 80px;
+    @extend %body-text-screen;
+  }
+}

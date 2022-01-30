@@ -15,7 +15,7 @@
       <h1 class="header__hero">nike x mmw training 4.0</h1>
     </header>
     <main class="main">
-      <section class="collection">
+      <section class="collection" id="collection">
         <h2 class="collection__header">о коллекции</h2>
         <div class="collection__about">
           <p class="collection__text">
@@ -47,7 +47,7 @@
           </p>
         </div>
       </section>
-      <section class="goods">
+      <section class="goods" id="goods">
         <h2 class="goods__header">товары</h2>
         <div class="goods__gallery"></div>
         <div class="goods__summary">
@@ -62,7 +62,7 @@
         <div class="goods__poster"></div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="subscribe">
       <h2 class="footer__subscribe">подписаться</h2>
       <p class="footer__subscribe-text">
         Укажите свой email чтобы быть в курсе даты релиза, и других новостей
@@ -72,7 +72,9 @@
         <input
           type="email"
           class="footer__email-field"
+          name="email"
           placeholder="Введите email"
+          required
         />
         <button class="footer__subscribe-button" type="submit">
           подписаться
@@ -87,9 +89,9 @@
         <button class="nav__close-btn" type="button"></button>
       </div>
       <div class="nav__menu">
-        <a href="" class="nav__menu-item">о коллекции</a
-        ><a href="" class="nav__menu-item">товары</a
-        ><a href="" class="nav__menu-item">подписаться</a>
+        <a href="#collection" class="nav__menu-item">о коллекции</a
+        ><a href="#goods" class="nav__menu-item">товары</a
+        ><a href="#subscribe" class="nav__menu-item">подписаться</a>
       </div>
     </nav>
   </body>

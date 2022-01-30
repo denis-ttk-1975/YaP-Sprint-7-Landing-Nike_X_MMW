@@ -18,9 +18,13 @@
   &__text {
     width: 50%;
     @extend %body-text-screen;
+    margin: 0;
   }
   &__image-wrap {
     width: 33.33%;
+  }
+  &__image {
+    width: 100%;
   }
   &__poster {
     width: 100%;
@@ -33,10 +37,44 @@
   &__summary {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px 80px;
+    padding: 80px 20px 80px;
   }
   &__motto {
     width: 33.33%;
     @extend %headline-small-screen;
+    margin: 0;
+  }
+  @media screen and (max-width: $pad) and (min-width: $phone) {
+    &__motto {
+      @include headline-small-pad;
+    }
+  }
+  @media screen and (max-width: $phone) {
+    min-width: $min-screen;
+    &__header {
+      @include headline-large-phone;
+      margin: 40px auto 20px;
+    }
+    &__about {
+      flex-direction: column;
+      padding: 0 20px 40px;
+    }
+    &__text {
+      width: 100%;
+
+      padding-bottom: 20px;
+    }
+    &__image-wrap {
+      width: 100%;
+    }
+    &__summary {
+      flex-direction: row;
+      padding: 40px 20px 20px;
+    }
+    &__motto {
+      width: 100%;
+      @include headline-small-screen;
+      padding-bottom: 20px;
+    }
   }
 }
