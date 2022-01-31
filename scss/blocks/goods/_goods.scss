@@ -9,13 +9,68 @@
     @extend %headline-large-screen;
     margin: 0 auto 40px;
   }
-  &__gallery {
+
+  &__cards-container {
     width: 100%;
-    padding-bottom: 27.7%;
-    background-image: url("./../images/gallery-placeholder.png");
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+    overflow-x: scroll;
+    // box-sizing: border-box;
+    // margin-bottom: 40px;
+  }
+  &__cards-container::-webkit-scrollbar {
+    // padding-top: 40px;
+    // margin-top: 40px;
+    max-height: 4px;
+
+    border-radius: 100px;
+  }
+  &__cards-container::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: $color-light;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    background-clip: content-box;
+  }
+  &__cards-container::-webkit-scrollbar-track {
+    background-color: #292929;
+    background-clip: content-box;
+    border-right: 20px solid $color-black;
+    border-left: 20px solid $color-black;
+    border-radius: 100px;
+    // border-top: 40px solid transparent;
+  }
+
+  &__card {
+    margin-bottom: 40px;
+    height: 400px;
+    position: relative;
+  }
+  &__photo {
+    height: 400px;
+    width: 320px;
+  }
+  &__buy-btn {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 116px;
+    height: 40px;
+    color: $color-white;
+    background-color: $color-black;
+    // box-sizing: border-box;
+    // border: 1px solid $color-white;
+    border: none;
+    border-radius: 100px;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    @extend %button-text-screen;
   }
   &__summary {
     display: flex;
