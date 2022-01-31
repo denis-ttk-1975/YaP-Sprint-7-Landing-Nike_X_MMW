@@ -261,6 +261,9 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .goods__scroll-left {
   position: absolute;
@@ -272,6 +275,9 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .goods__summary {
   display: flex;

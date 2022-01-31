@@ -86,6 +86,9 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   &__scroll-left {
     position: absolute;
@@ -97,6 +100,9 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   &__summary {
     display: flex;
