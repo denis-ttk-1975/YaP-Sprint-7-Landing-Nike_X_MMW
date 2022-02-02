@@ -58,6 +58,8 @@
 }
 .header__poster {
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .header__menu-btn {
   position: absolute;
@@ -133,9 +135,13 @@
 }
 .collection__image {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .collection__poster {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .collection__summary {
   display: flex;
@@ -235,6 +241,8 @@
 .goods__photo {
   height: 400px;
   width: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .goods__buy-btn {
   position: absolute;
@@ -286,6 +294,8 @@
 }
 .goods__poster {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (max-width: 500px) {
   .goods {

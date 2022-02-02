@@ -25,6 +25,7 @@
   }
   &__image {
     width: 100%;
+    object-fit: cover;
   }
   // &__poster {
   //   width: 100%;
@@ -36,6 +37,7 @@
   // }
   &__poster {
     width: 100%;
+    object-fit: cover;
   }
   &__summary {
     display: flex;

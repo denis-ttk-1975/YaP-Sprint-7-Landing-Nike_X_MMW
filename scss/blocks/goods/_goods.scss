@@ -59,6 +59,7 @@
   &__photo {
     height: 400px;
     width: 320px;
+    object-fit: cover;
   }
   &__buy-btn {
     position: absolute;
@@ -113,6 +114,7 @@
   }
   &__poster {
     width: 100%;
+    object-fit: cover;
     // padding-bottom: 56.25%;
     // background-image: url("./../images/goods.png");
     // background-position: center;
