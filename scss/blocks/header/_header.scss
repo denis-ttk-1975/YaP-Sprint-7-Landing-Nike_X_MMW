@@ -1,11 +1,6 @@
 .header {
-  // width: 100%;
-  // padding-bottom: 56.25%;
   height: 810px;
-  // background-image: url("./../images/sportsman.png");
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
+
   position: relative;
   display: flex;
   align-items: center;
@@ -17,9 +12,6 @@
     object-fit: cover;
   }
 
-  // &__menu-wraper {
-  //   padding: 40px 20px 0;
-  // }
   &__menu-btn {
     position: absolute;
     top: 40px;
@@ -36,7 +28,6 @@
   }
 
   &__hero {
-    // margin: 120px 20px 0;
     margin: 0;
     position: absolute;
     top: 208px;
@@ -49,16 +40,13 @@
   }
   @media screen and (max-width: $pad) and (min-width: $phone) {
     &__hero {
-      // margin: 80px 20px 0;
       top: 168px;
     }
   }
   @media screen and (max-width: $phone) {
     max-height: 360px;
     min-width: $min-screen;
-    // &__menu-wraper {
-    //   padding: 20px 20px 0;
-    // }
+
     &__menu-btn {
       top: 20px;
       width: 24px;

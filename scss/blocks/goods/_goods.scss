@@ -23,12 +23,8 @@
 
     list-style: none;
     overflow-x: scroll;
-    // box-sizing: border-box;
-    // margin-bottom: 40px;
   }
   &__cards-container::-webkit-scrollbar {
-    // padding-top: 40px;
-    // margin-top: 40px;
     max-height: 4px;
 
     border-radius: 100px;
@@ -36,18 +32,12 @@
   &__cards-container::-webkit-scrollbar-thumb {
     border-radius: 100px;
     background-color: $color-light;
-    // border-right: 20px solid transparent;
-    // border-left: 20px solid transparent;
-    // background-clip: content-box;
-    // min-width: 100px;
   }
   &__cards-container::-webkit-scrollbar-track {
     background-color: #292929;
-    // background-clip: content-box;
-    // border-right: 20px solid $color-black;
-    // border-left: 20px solid $color-black;
+
     border-radius: 100px;
-    // border-top: 40px solid transparent;
+
     margin: 0 20px;
   }
 
@@ -69,8 +59,7 @@
     height: 40px;
     color: $color-white;
     background-color: $color-black;
-    // box-sizing: border-box;
-    // border: 1px solid $color-white;
+
     border: none;
     border-radius: 100px;
     text-align: center;
@@ -112,14 +101,14 @@
     padding: 80px 20px 80px;
     flex-direction: row-reverse;
   }
+  &__text {
+    width: 50%;
+    @extend %body-text-screen;
+    margin: 0;
+  }
   &__poster {
     width: 100%;
     object-fit: cover;
-    // padding-bottom: 56.25%;
-    // background-image: url("./../images/goods.png");
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
   }
   @media screen and (max-width: $pad) and (min-width: $phone) {
   }
@@ -134,6 +123,11 @@
     }
     &__buy-btn {
       width: 286px;
+    }
+    &__text {
+      width: 100%;
+
+      padding-bottom: 20px;
     }
   }
 }

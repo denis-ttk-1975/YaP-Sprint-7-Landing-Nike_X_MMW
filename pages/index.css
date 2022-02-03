@@ -1,6 +1,5 @@
 @import url(./../vendor/normalize.css);
 @import url(./../vendor/fonts.css);
-/* @import url(./../blocks/root/root.css); */
 .root {
   font-family: "GolosTextWebMedium", "Arial", sans-serif;
   font-style: normal;
@@ -20,7 +19,7 @@
   text-transform: uppercase;
 }
 
-.footer__copyright-info, .footer__subscribe-text, .collection__text {
+.footer__copyright-info, .footer__subscribe-text, .goods__text, .collection__text {
   font-weight: 400;
   font-family: "GolosTextWebRegular", "Arial", sans-serif;
   font-size: 16px;
@@ -292,6 +291,10 @@
   padding: 80px 20px 80px;
   flex-direction: row-reverse;
 }
+.goods__text {
+  width: 50%;
+  margin: 0;
+}
 .goods__poster {
   width: 100%;
   -o-object-fit: cover;
@@ -313,6 +316,10 @@
   }
   .goods__buy-btn {
     width: 286px;
+  }
+  .goods__text {
+    width: 100%;
+    padding-bottom: 20px;
   }
 }
 
