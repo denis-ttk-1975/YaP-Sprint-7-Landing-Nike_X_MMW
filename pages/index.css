@@ -35,7 +35,7 @@
 
 .root {
   max-width: 1440px;
-  margin: auto;
+  margin: 0 auto;
   background-color: #0a0a0a;
 }
 
@@ -59,6 +59,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
 }
 .header__menu-btn {
   position: absolute;

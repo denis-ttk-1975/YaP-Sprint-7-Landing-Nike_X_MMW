@@ -1,6 +1,6 @@
 .root {
   @extend %font-env;
   max-width: 1440px;
-  margin: auto;
+  margin: 0 auto;
   background-color: $color-black;
 }
