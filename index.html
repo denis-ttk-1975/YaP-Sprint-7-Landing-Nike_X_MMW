@@ -9,9 +9,13 @@
   </head>
   <body class="root">
     <header class="header">
-      <div class="header__menu-wraper">
-        <button class="header__menu-btn" type="button"></button>
-      </div>
+      <img
+        src="./images/sportsman.png"
+        alt="Спортсмен"
+        class="header__poster"
+      />
+      <button class="header__menu-btn" type="button"></button>
+
       <h1 class="header__hero">nike x mmw training 4.0</h1>
     </header>
     <main class="main">
@@ -33,7 +37,13 @@
             />
           </div>
         </div>
-        <div class="collection__poster"></div>
+
+        <img
+          src="./images/training.png"
+          alt="Вдохновители коллекции"
+          class="collection__poster"
+        />
+
         <div class="collection__summary">
           <p class="collection__motto">
             Тренинг — это не просто физическая активность
@@ -49,9 +59,78 @@
       </section>
       <section class="goods" id="goods">
         <h2 class="goods__header">товары</h2>
-        <div class="goods__gallery"></div>
+        <div class="goods__scroll-wraper">
+          <ul class="goods__cards-container">
+            <li class="goods__card">
+              <img
+                src="./images/nikelab3.png"
+                alt="Фото элемента коллекции"
+                class="goods__photo"
+              />
+              <button type="button" class="goods__buy-btn">купить</button>
+            </li>
+            <li class="goods__card">
+              <img
+                src="./images/nikelab4.png"
+                alt="Фото элемента коллекции"
+                class="goods__photo"
+              />
+              <button type="button" class="goods__buy-btn">купить</button>
+            </li>
+            <li class="goods__card">
+              <img
+                src="./images/nikelab5.png"
+                alt="Фото элемента коллекции"
+                class="goods__photo"
+              />
+              <button type="button" class="goods__buy-btn">купить</button>
+            </li>
+            <li class="goods__card">
+              <img
+                src="./images/nikelab6.png"
+                alt="Фото элемента коллекции"
+                class="goods__photo"
+              />
+              <button type="button" class="goods__buy-btn">купить</button>
+            </li>
+            <li class="goods__card">
+              <img
+                src="./images/nikelab7.png"
+                alt="Фото элемента коллекции"
+                class="goods__photo"
+              />
+              <button type="button" class="goods__buy-btn">купить</button>
+            </li>
+            <li class="goods__card">
+              <img
+                src="./images/nikelab8.png"
+                alt="Фото элемента коллекции"
+                class="goods__photo"
+              />
+              <button type="button" class="goods__buy-btn">купить</button>
+            </li>
+            <li class="goods__card">
+              <img
+                src="./images/nikelab9.png"
+                alt="Фото элемента коллекции"
+                class="goods__photo"
+              />
+              <button type="button" class="goods__buy-btn">купить</button>
+            </li>
+            <li class="goods__card">
+              <img
+                src="./images/nikelab10.png"
+                alt="Фото элемента коллекции"
+                class="goods__photo"
+              />
+              <button type="button" class="goods__buy-btn">купить</button>
+            </li>
+          </ul>
+          <button class="goods__scroll-right" type="button"></button>
+          <button class="goods__scroll-left" type="button"></button>
+        </div>
         <div class="goods__summary">
-          <p class="collection__text">
+          <p class="goods__text">
             Дисциплина — упражнение, которое ты практикуешь ежедневно. Ты учишь
             свои разум и тело переносить суровые условия и достигать
             невозможного. Раскрой свою внутреннюю силу с новой коллекцией MMW, в
@@ -59,7 +138,12 @@
             исполнения и исключительную выразительность.
           </p>
         </div>
-        <div class="goods__poster"></div>
+
+        <img
+          src="./images/goods.png"
+          alt="Фото элементов коллекции"
+          class="goods__poster"
+        />
       </section>
     </main>
     <footer class="footer" id="subscribe">
@@ -68,7 +152,7 @@
         Укажите свой email чтобы быть в курсе даты релиза, и других новостей
         о коллекции
       </p>
-      <form action="" class="footer__input-form">
+      <form class="footer__input-form">
         <input
           type="email"
           class="footer__email-field"

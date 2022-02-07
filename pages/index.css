@@ -1,6 +1,5 @@
 @import url(./../vendor/normalize.css);
 @import url(./../vendor/fonts.css);
-/* @import url(./../blocks/root/root.css); */
 .root {
   font-family: "GolosTextWebMedium", "Arial", sans-serif;
   font-style: normal;
@@ -20,18 +19,24 @@
   text-transform: uppercase;
 }
 
-.footer__copyright-info, .footer__subscribe-text, .collection__text {
+.footer__copyright-info, .footer__subscribe-text, .goods__text, .collection__text {
   font-weight: 400;
   font-family: "GolosTextWebRegular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 150%;
 }
 
-.footer__subscribe-button {
+.footer__subscribe-button, .goods__buy-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 125%;
   text-transform: uppercase;
+}
+
+.root {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #0a0a0a;
 }
 
 .main {
@@ -44,17 +49,22 @@
 }
 
 .header {
-  width: 100%;
-  padding-bottom: 56.25%;
-  background-image: url("./../images/sportsman.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 810px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.header__menu-wraper {
-  padding: 40px 20px 0;
+.header__poster {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
 }
 .header__menu-btn {
+  position: absolute;
+  top: 40px;
+  left: 20px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -66,7 +76,10 @@
   background-size: cover;
 }
 .header__hero {
-  margin: 120px 20px 0;
+  margin: 0;
+  position: absolute;
+  top: 208px;
+  left: 20px;
   max-width: 460px;
   width: 100%;
   height: 160px;
@@ -74,22 +87,21 @@
 }
 @media screen and (max-width: 1000px) and (min-width: 500px) {
   .header__hero {
-    margin: 80px 20px 0;
+    top: 168px;
   }
 }
 @media screen and (max-width: 500px) {
   .header {
+    max-height: 360px;
     min-width: 300px;
   }
-  .header__menu-wraper {
-    padding: 20px 20px 0;
-  }
   .header__menu-btn {
+    top: 20px;
     width: 24px;
     height: 24px;
   }
   .header__hero {
-    margin: 40px 20px 0;
+    top: 84px;
     max-width: 280px;
     font-weight: 500;
     font-size: 32px;
@@ -123,14 +135,13 @@
 }
 .collection__image {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .collection__poster {
   width: 100%;
-  padding-bottom: 56.25%;
-  background-image: url("./../images/training.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .collection__summary {
   display: flex;
@@ -196,12 +207,83 @@
 .goods__header {
   margin: 0 auto 40px;
 }
-.goods__gallery {
+.goods__scroll-wraper {
+  position: relative;
   width: 100%;
-  padding-bottom: 27.7%;
-  background-image: url("./../images/gallery-placeholder.png");
+}
+.goods__cards-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow-x: scroll;
+}
+.goods__cards-container::-webkit-scrollbar {
+  max-height: 4px;
+  border-radius: 100px;
+}
+.goods__cards-container::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: #ebebeb;
+}
+.goods__cards-container::-webkit-scrollbar-track {
+  background-color: #292929;
+  border-radius: 100px;
+  margin: 0 20px;
+}
+.goods__card {
+  margin-bottom: 40px;
+  height: 400px;
+  position: relative;
+}
+.goods__photo {
+  height: 400px;
+  width: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.goods__buy-btn {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 116px;
+  height: 40px;
+  color: #fff;
+  background-color: #0a0a0a;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+}
+.goods__scroll-right {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  top: 180px;
+  background-image: url("./../images/arrow-right.svg");
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.goods__scroll-left {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 20px;
+  top: 180px;
+  background-image: url("./../images/arrow-left.svg");
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 .goods__summary {
@@ -210,13 +292,14 @@
   padding: 80px 20px 80px;
   flex-direction: row-reverse;
 }
+.goods__text {
+  width: 50%;
+  margin: 0;
+}
 .goods__poster {
   width: 100%;
-  padding-bottom: 56.25%;
-  background-image: url("./../images/goods.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (max-width: 500px) {
   .goods {
@@ -228,6 +311,16 @@
     line-height: 125%;
     text-transform: uppercase;
     margin: 0 auto 20px;
+  }
+  .goods__card {
+    margin-bottom: 20px;
+  }
+  .goods__buy-btn {
+    width: 286px;
+  }
+  .goods__text {
+    width: 100%;
+    padding-bottom: 20px;
   }
 }
 
