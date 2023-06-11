@@ -1,12 +1,13 @@
-# Проект: Landing Nike X MMW - Персональный проект
+# Landing-page for contest of Nike - Collaboration collection Nike & MMW
+# Лендинг-страница для конкурса Nike - Коллекция коллаборации брендов Nike & MMW
 
-# Изучение технологии SASS-SCSS
+#### Example internet-page available at https://denis-ttk-1975.github.io/YaP-Sprint-7-Landing-Nike_X_MMW/
+#### Работающий сайт размещен на https://denis-ttk-1975.github.io/YaP-Sprint-7-Landing-Nike_X_MMW/
 
-### Стрим 7 Яндекс-практикум "Веб-разработчик плюс"
+## Author - Denis Ulesov
+## Автор - Денис Улесов
 
-Сайт с адаптивной версткой. Функционал сайта - страница лендингового сайта коллекции одежды Nike X MMW.
-Сделана форма для сбора email и выпадающее модальное окно с навигационным меню.
+#### Used tools: HTTP, CSS, Flex, SASS-SCSS, JS
+#### Используемые библиотеки и фреймворки: HTTP, CSS, Flex, SASS-SCSS, JS
 
-Использованы технологии html, css, flex-box, SASS, SCSS и js включая работу с DOM элементами.
 
-Страница GitHub-Pages: https://denis-ttk-1975.github.io/YaP-Sprint-7-Landing-Nike_X_MMW/
